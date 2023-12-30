@@ -16,7 +16,7 @@ class EducationController extends BaseController
 
         // Puedes pasar los datos a la vista
         $data = [
-            'formaciones' => $formaciones,
+            'formaciones' => $formaciones
         ];
 
         if (auth()->loggedIn()) {

@@ -2,7 +2,7 @@
     <div class="container">
         <h2>Listar Programas de Formación</h2>
         <a href="<?= base_url().'education/new' ?>"><button type="button" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Crear Formación</button></a>
-            <table id="list_user" class="table table-bordered" style="width:100%">
+            <table id="list" class="table table-bordered" style="width:100%">
                 <thead>
                     <tr>
                         <th>Id</th>

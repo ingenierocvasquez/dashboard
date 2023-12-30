@@ -1,6 +1,6 @@
 <footer class="blog-footer">
     <p>Dashboard Desarrollado con CI4 por <a href="https://twitter.com/mdo">@ingenierocvasquez</a>.</p>
-    <p><a href="#">Regresar al Inicio</a></p>
+    <p>Página Cargada en <span class="badge badge-dark">{elapsed_time}</span> segundos </p>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -8,11 +8,15 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+
 
 <script>
     //Cargar Datatables
 //new DataTable('#listar_proyectos');
-new DataTable('#list_user', {
+new DataTable('#list', {
   language: {
       info: 'Mostrando Página _PAGE_ de _PAGES_',
       infoEmpty: 'No Existen Registros',
