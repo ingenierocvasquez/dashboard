@@ -1,6 +1,14 @@
 <main>
     <div class="container">
         <h2>Listar Programas de Formación</h2>
+        <?php if(session('mensaje')):?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong><?= session('mensaje') ?></strong> 
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <?php endif?>
         <a href="<?= base_url().'education/new' ?>"><button type="button" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Crear Formación</button></a>
             <table id="list" class="table table-bordered" style="width:100%">
                 <thead>

@@ -83,7 +83,7 @@ class EducationController extends BaseController
         $educationModel->insert($datos_formacion);
 
         // Puedes redirigir a otra página después de la inserción
-        return redirect()->to('/education')->with('mensaje', 'Formación insertado correctamente.');
+        return redirect()->to('/education')->with('mensaje', 'Formación insertada correctamente.');
 
 
         }
@@ -137,7 +137,7 @@ class EducationController extends BaseController
         $educationModel->update($id, $datos_formacion);
 
         // Puedes redirigir a otra página después de la inserción
-        return redirect()->to('/education')->with('mensaje', 'Formación Actualizado correctamente.');
+        return redirect()->to('/education')->with('mensaje', 'Formación Actualizada correctamente.');
 
     }
 
@@ -152,7 +152,7 @@ class EducationController extends BaseController
         $educationModel->delete($id);
 
         // Puedes redirigir a otra página después de la inserción
-        return redirect()->to('/education')->with('mensaje', 'Formación Eliminado correctamente.');
+        return redirect()->to('/education')->with('mensaje', 'Formación Eliminada correctamente.');
 
 
 
