@@ -10,7 +10,8 @@ class PageController extends BaseController
     public function index(): string
     {
         //Login Page
-        return view('dashboard/template/pages/LoginView');
+        //return view('dashboard/template/pages/LoginView');
+        return view('frontend/template/InicioView');
     }
 
     public function DashboardFunction(){
@@ -20,11 +21,16 @@ class PageController extends BaseController
         
         // Consulta básica para obtener todos los usuarios
         $education_year = $educationModel->education_year();
+        $type_course = $educationModel->type_course();
 
          // Puedes pasar los datos a la vista
         $data = [
-            'datosGrafico' =>$education_year,
+            'datosGrafico1' =>$education_year,
+            'datosGrafico2' =>$type_course,
         ];
+
+        //var_dump($type_course);
+
                 
         if (auth()->loggedIn()) {
 

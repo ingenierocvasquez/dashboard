@@ -22,4 +22,15 @@ class EducationModel extends Model
         ');
         return $query->getResultArray();
     }
+
+    public function type_course()
+    {
+        $query = $this->db->query('
+        SELECT categoria_programa, COUNT(categoria_programa) AS total 
+        FROM formaciones
+        GROUP BY categoria_programa
+        ORDER BY total DESC;
+        ');
+        return $query->getResultArray();
+    }
 }

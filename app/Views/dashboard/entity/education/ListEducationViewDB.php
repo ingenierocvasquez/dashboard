@@ -31,10 +31,12 @@
                         <td><?= $f['tipo_programa']?></td>
                         <td><?= $f['categoria_programa']?></td>
                         <td><?= $f['fecha_certificacion']?></td>
-                        <td id="action"><a href="<?= base_url().'education/'.$f['id']?>"><button type="button" class="btn btn-primary btn-sm"><i class="fa fa-eye" aria-hidden="true"></i></button></a>
-                            <a href="<?= base_url().'education/edit/'.$f['id']?>"><button type="button" class="btn btn-warning btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                        <td id="action"><a href="<?= base_url().'education/'.$f['id']?>">
+                        <button type="button" class="btn btn-light btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Ver</button></a>
+                            <a href="<?= base_url().'education/edit/'.$f['id']?>">
+                        <button type="button" class="btn btn-light btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i> Editar</button></a>
                             <form action="<?= base_url().'education/delete/'.$f['id']?>" method="POST">
-                            <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                        <button type="submit" class="btn btn-light btn-sm"><i class="fa fa-trash" aria-hidden="true"></i> Eliminar</button>
                             </form>
                         </td>
                     </tr>

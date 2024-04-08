@@ -65,7 +65,7 @@
                         <p class="text-center"><?= lang('Auth.needAccount') ?> <a href="<?= url_to('register') ?>"><?= lang('Auth.register') ?></a></p>
                     <?php endif ?>
 
-                    <!--<p class="text-center">Regresar al Inicio <a href="<?= base_url() ?>">Regresar</a></p>-->
+                    <p class="text-center">Regresar al Inicio <a href="<?= base_url() ?>">Regresar</a></p>
 
                 </form>
             </div>
