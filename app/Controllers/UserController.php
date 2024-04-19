@@ -21,12 +21,13 @@ class UserController extends BaseController
 
         if (auth()->loggedIn()) {
 
-            //Listar Usuarios Page
-            return view('dashboard/template/HeaderViewDB')
+            //Lista de todos los usuarios
+            return 
+            view('dashboard/template/HeaderViewDB')
             .view('dashboard/entity/user/ListUserViewDB', $data)
             .view('dashboard/template/FooterViewDB');
 
         }
-        return redirect()->to('/');
+            return redirect()->to('/');
     }
 }

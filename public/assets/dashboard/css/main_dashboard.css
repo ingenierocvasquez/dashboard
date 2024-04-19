@@ -1,0 +1,21 @@
+button#btn_crear {
+    margin-bottom: 20px;
+}
+
+nav{
+    margin: 20px 0px 20px 0px;   
+}
+
+.blog-footer {
+padding: 2.5rem 0;
+color: #999;
+text-align: center;
+background-color: #f9f9f9;
+border-top: .05rem solid #e5e5e5;
+margin-top: 20px;
+}
+
+.blog-footer p:last-child {
+margin-bottom: 0;
+}
+

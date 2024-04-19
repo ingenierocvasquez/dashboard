@@ -9645,3 +9645,15 @@ ul.ascii > li > ul > li:last-child > ul > li:last-child > ul > li:last-child > u
   font-variation-settings: "wdth" 100;
   font-size: 3rem;
 }
+
+div#main {
+  padding-top: 5rem;
+}
+
+button#badget {
+  margin: 5px 2px;
+}
+
+div#action {
+  display: flex;
+}
